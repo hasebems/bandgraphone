@@ -4,15 +4,16 @@
 #include "ada88.h"  // for Debug
 
 #define MIDI_CH          (0)
-#define SERIAL_SPEED     (38400)  // for Serial MIDI  //(31250)  // for MIDI Shield
+#define SERIAL_SPEED     (38400)  // for Serial MIDI
+//#define SERIAL_SPEED     (31250)  // for MIDI Shield
 #define NOTE_NUMBER_BASE (40)
 #define NOTE_ON_VELOCITY (100)
 
 #define NUM_MODULE              (5)
 #define NUM_CH                  (8)
 #define PIN_CH_SELECT_0         (10)
-#define ANALOG_PIN_MODULE_0     (1)
-#define NOTE_OFF_BRIGHTNESS_MIN (128)
+#define ANALOG_PIN_MODULE_0     (0)
+#define NOTE_OFF_BRIGHTNESS_MIN (180)
 
 byte brightnessOfSensors[NUM_MODULE][NUM_CH] = {0};
 
